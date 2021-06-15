@@ -126,7 +126,7 @@ def draw_seg_maps(data, output, epoch, i):
     rgb = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     cv2.addWeighted(rgb, alpha, image, beta, gamma, image)
-    cv2.imwrite(f"train_seg_maps/e{epoch}_b{i}.jpg", image)
+    cv2.imwrite(f"/content/drive/MyDrive/camvid/CamVid/seg_maps/e{epoch}_b{i}.jpg", image)
 
 def draw_test_segmentation_map(outputs):
     """
@@ -213,4 +213,4 @@ def save_model_dict(model, epoch, optimizer,
             'loss': criterion,
             'valid_iters': valid_iters, 
             'train_iters': train_iters, 
-            }, f"checkpoints/model_{epoch}.pth")
+            }, f"/content/drive/MyDrive/camvid/CamVid/checkpoints/model_{epoch}.pth")
