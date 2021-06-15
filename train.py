@@ -6,6 +6,8 @@ from engine import Trainer
 from dataset import train_dataset, train_data_loader
 from dataset import valid_dataset, valid_data_loader
 from model import model
+import vit
+import resvit
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-r', '--resume-training', dest='resume_training',

@@ -4,7 +4,7 @@ LOG_EVERY = 5 # log training and validation metrics every `LOG_EVERY` epochs
 BATCH_SIZE = 16
 DEVICE = 'cuda'
 LR = 0.0001
-ROOT_PATH = '../input/camvid'
+ROOT_PATH = '/content/drive/MyDrive/camvid/CamVid'
 
 # the classes that we want to train
 CLASSES_TO_TRAIN = [
